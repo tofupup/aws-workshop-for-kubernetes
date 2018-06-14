@@ -81,7 +81,7 @@ To install the script, run this command in the "bash" terminal tab of the Cloud9
 
 image:cloud9-run-script.png[Running the script in Cloud9 Terminal]
 
-If you deployed your Cloud9 IDE in any region not supported by EKS, you will need to manually set the `AWS_DEFAULT_REGION` environment variable to a region supported by EKS:
+You will need to set the `AWS_DEFAULT_REGION` environment variable to a region with EKS support, so that your AWS CLI commands will successfully execute.  If not running in the `us-east-1` region, replace it in the commands below with the appropriate region.  
 
     export AWS_DEFAULT_REGION=us-east-1
     echo "export AWS_DEFAULT_REGION=us-east-1" >> ~/.bash_profile
